@@ -75,7 +75,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: var(--color-accent);
+  text-decoration: underline;
 }
 .feature-header {
   position: relative;
@@ -164,6 +164,26 @@ img {
   border-inline-start: 0.4rem solid var(--color-accent);
   font-size: 1.35rem;
 }
+.ethnicity-numbers {
+  position: relative;
+}
+.fact-box {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  width: 300px;
+  height: auto;
+  background-color: var(--color-accent);
+  border-left: 6px solid var(--color-action);
+}
+.fact-box a {
+  color: var(--color-action);
+}
+.fact-box a:hover {
+  text-decoration: underline;
+}
 .shape-portrait {
   width: min(45%, 20rem);
   margin: 0 1rem 1rem 0;
@@ -173,6 +193,13 @@ img {
   grid-column: 1/-1;
   padding: 1rem;
   background: #f1f1f1;
+}
+@media (max-width: 768px) {
+  .fact-box {
+    position: relative;
+    width: 100%;
+    border: none;
+  }
 }
 @media (min-width: 52rem) {
   main {
