@@ -25,7 +25,15 @@
         vertical-align: top;
       }
       th {
-        background: #f1f1f1;
+        background: #03045e;
+        color: #fff;
+      }
+      .example-row {
+        background-color: #ccc;
+        color: #808080;
+      }
+      .odd-row {
+        background-color: #f2f2f2;
       }
     </style>
   </head>
@@ -48,7 +56,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
+        <tr class="example-row">
           <td>Example only</td>
           <td>Replace</td>
           <td>Replace</td>
@@ -76,11 +84,11 @@
             or viewport if removed
           </td>
           <td>
-            Verify <code>.issue-badge</code> remains anchored to the card at all
-            viewport sizes
+            Verify <code>.issue-badge</code> remains anchored to its position on
+            the page at all viewport sizes
           </td>
         </tr>
-        <tr>
+        <tr class="odd-row">
           <td><code>.issue-badge</code></td>
           <td>Highlight badge; highlights an issue</td>
           <td>Appears above content in document flow</td>
@@ -91,8 +99,8 @@
           <td>Contained in <code>.feature-header</code></td>
           <td>Element becomes relatively positioned to ancestor by default</td>
           <td>
-            Verify <code>.issue-badge</code> remains anchored to the card at all
-            viewport sizes
+            Verify <code>.issue-badge</code> remains anchored to its position on
+            the page at all viewport sizes
           </td>
         </tr>
         <tr>
@@ -113,7 +121,7 @@
             scrolled
           </td>
         </tr>
-        <tr>
+        <tr class="odd-row">
           <td><code>.feature-figure</code></td>
           <td><code>figure</code> container for featured content and media</td>
           <td>Standard block container in normal document flow</td>
@@ -122,9 +130,106 @@
             parent for absolutely positioned element
             <code>.figure-overlay</code>
           </td>
-          <td>Replace</td>
-          <td>Replace</td>
-          <td>Replace</td>
+          <td>Contained in <code>section id="section-one"</code> block</td>
+          <td>
+            <code>.feature-overlay</code> becomes relative to a different
+            ancestor or viewport if removed
+          </td>
+          <td>
+            Verify <code>.feature-overlay</code> remains anchored to its
+            position on the page at all viewport sizes
+          </td>
+        </tr>
+        <tr>
+          <td><code>.feature-overlay</code></td>
+          <td>Highlights an issue or fact</td>
+          <td>Standard block container in normal document flow</td>
+          <td>
+            <code>position: absolute</code> to position element over image/media
+          </td>
+          <td>Contained in <code>.feature-figure</code> block</td>
+          <td>Element becomes relatively positioned to ancestor by default</td>
+          <td>
+            Verify <code>.feature-overlay</code> remains anchored to its
+            position on the page at all viewport sizes
+          </td>
+        </tr>
+        <tr class="odd-row">
+          <td><code>.ethnicity-numbers</code></td>
+          <td>Section for relevant news and facts</td>
+          <td>Standard block container in normal document flow</td>
+          <td>
+            <code>position: relative</code> to provide an absolutely positioned
+            parent for <code>.fact-box</code>
+          </td>
+          <td>Contained in <code>section id="section-one"</code> block</td>
+          <td>
+            <code>.fact-box</code> element becomes relatively positioned and out
+            of position
+          </td>
+          <td>
+            Verify <code>.fact-box</code> remains anchored to its position on
+            the page at all viewport sizes
+          </td>
+        </tr>
+        <tr>
+          <td><code>.fact-box</code></td>
+          <td>Container element for relevant facts/info</td>
+          <td>Appears above content in document flow</td>
+          <td>
+            <code>position: absolute</code> to position element on top of parent
+            container, outside of normal document flow
+          </td>
+          <td>Contained in <code>ethnicity-numbers</code> block</td>
+          <td>Element becomes relatively positioned and out of position</td>
+          <td>
+            Verify <code>.fact-box</code> remains anchored to its position on
+            the page at all viewport sizes
+          </td>
+        </tr>
+        <tr class="odd-row">
+          <td><code>.grid-right</code></td>
+          <td>Contains relevant info and media</td>
+          <td>Standard block container in normal document flow</td>
+          <td>
+            Provides relatively positioned parent container for absolutely
+            positioned element <code>.screening-img-overlay</code>
+          </td>
+          <td>Contained in <code>.screening-grid</code> block</td>
+          <td>
+            <code>.screening-img-overlay</code> becomes absolutely positioned
+            and out of position
+          </td>
+          <td>
+            Verify <code>.screening-img-overlay</code> remains anchored to its
+            position on the page at all viewport sizes
+          </td>
+        </tr>
+        <tr>
+          <td><code>.screening-img-overlay</code></td>
+          <td>Contains page-relevant info</td>
+          <td>Appears above content in document flow</td>
+          <td>
+            <code>position: absolute</code> to position element over image/media
+          </td>
+          <td>Contained in <code>.grid-right</code> block</td>
+          <td>Element becomes relatively positioned and out of position</td>
+          <td>
+            Verify <code>.screening-img-overlay</code> remains anchored to its
+            position on the page at all viewport sizes
+          </td>
+        </tr>
+        <tr class="odd-row">
+          <td><code>.shape-portrait</code></td>
+          <td>Relevant media/images</td>
+          <td>Contained image is rectangular and unclipped</td>
+          <td>
+            <code>border-radius: 50%;</code>
+            clips edges of contained image so image appears round in shape
+          </td>
+          <td>Contained in <code>.sect2-padding</code> block</td>
+          <td>Image no longer clipped and rounded</td>
+          <td>Verify image remains clipped at all viewport sizes</td>
         </tr>
       </tbody>
     </table>
