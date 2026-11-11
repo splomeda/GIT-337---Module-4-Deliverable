@@ -208,6 +208,7 @@ img {
 }
 .grid-right {
   position: relative;
+  padding-top: 20px;
 }
 .screening-img-overlay {
   display: flex;
@@ -215,7 +216,7 @@ img {
   background-color: var(--color-accent);
   width: 300px;
   height: 100px;
-  top: 20px;
+  top: 50px;
   right: -20px;
   padding: 20px;
   align-items: center;
