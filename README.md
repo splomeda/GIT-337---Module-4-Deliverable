@@ -17,3 +17,11 @@ Sources:
 4. Early detection, prevention are key in fight against diabetes
    Karen Renner, News Tribune
    https://www.newstribune.com/news/2026/nov/10/early-detection-prevention-are-key-in-fight/
+
+5. Three friends enjoying a sunny day at the beach, embracing with smiles.
+   Image by Nappy
+   https://www.pexels.com/photo/two-women-with-man-hugging-by-the-sea-936018/
+
+6. Doctor using a glucose meter to check a patient's blood sugar during a medical consultation.
+   Image by Pavel Danilyuk
+   https://www.pexels.com/photo/glucose-meter-in-doctor-hands-7653129/

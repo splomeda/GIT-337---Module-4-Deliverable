@@ -6,6 +6,7 @@
   --size-h1: 2.5rem;
   --size-h2: 2rem;
   --size-h3: 1.25rem;
+  --size-caption: 0.5rem;
   --line-height-body: 1.6;
   --font-weight: 700;
 
@@ -60,7 +61,7 @@ html {
 body {
   margin: 0;
   color: var(--color-text);
-  background: var(--color-surface);
+  background: var(--color-bg);
   font-family: var(--font-body);
   line-height: 1.6;
 }
@@ -152,6 +153,7 @@ article section {
   padding: 1rem;
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
+  z-index: 1;
 }
 img {
   display: block;
@@ -170,6 +172,7 @@ img {
   justify-content: center;
   align-items: center;
   border-left: 6px solid var(--color-action);
+  z-index: 2;
 }
 .pull-quote {
   margin: 2rem 0;
@@ -197,10 +200,36 @@ img {
 .fact-box a:hover {
   text-decoration: underline;
 }
+.screening-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  text-align: justify;
+}
+.grid-right {
+  position: relative;
+}
+.screening-img-overlay {
+  display: flex;
+  position: absolute;
+  background-color: var(--color-accent);
+  width: 300px;
+  height: 100px;
+  top: 20px;
+  right: -20px;
+  border-left: 6px solid var(--color-action);
+}
+.caption {
+  font-size: 10px;
+}
+.sect2-padding {
+  text-align: justify;
+}
 .shape-portrait {
   width: min(45%, 20rem);
   margin: 0 1rem 1rem 0;
   border-radius: 50%;
+  margin-top: 30px;
 }
 .documentation {
   grid-column: 1/-1;
@@ -212,6 +241,23 @@ img {
     position: relative;
     width: 100%;
     border: none;
+  }
+  .figure-overlay {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border: none;
+  }
+  .screening-grid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: var(--space-md);
+    text-align: left;
+  }
+  .sect2-padding {
+    padding: var(--space-md);
   }
 }
 @media (min-width: 52rem) {
