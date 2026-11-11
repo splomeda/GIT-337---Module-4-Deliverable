@@ -1,59 +1,132 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>Composition Plan</title>
-        <style>
-            body{
-                font-family:Arial,sans-serif;
-                line-height:1.5;
-                max-width:90rem;
-                margin:auto;
-                padding:1rem;
-                color:#191919;
-                }
-            table{
-                width:100%;
-                border-collapse:collapse;
-                }
-            th,td{
-                padding:.6rem;
-                border:1px solid #999;
-                text-align:left;
-                vertical-align:top;
-                }
-            th{
-                background:#f1f1f1;
-                }
-        </style>
-        </head>
-        <body>
-            <h1>L6 · Composition Plan</h1>
-            <p>Complete one row for every positioned, layered, clipped, rounded, or shape-wrapped element. Duplicate rows as needed.</p>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Element</th>
-                        <th>Content purpose</th>
-                        <th>Normal-flow baseline</th>
-                        <th>Chosen technique and why</th>
-                        <th>Containing block / stacking context</th>
-                        <th>Fallback or disengagement</th>
-                        <th>Required test</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Example only</td>
-                        <td>Replace</td>
-                        <td>Replace</td>
-                        <td>Replace</td>
-                        <td>Replace</td>
-                        <td>Replace</td>
-                        <td>Replace</td>
-                    </tr>
-                </tbody>
-            </table>
-        </body>
-        </html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>splomedahl | Composition Plan</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.5;
+        max-width: 90rem;
+        margin: auto;
+        padding: 1rem;
+        color: #191919;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        padding: 0.6rem;
+        border: 1px solid #999;
+        text-align: left;
+        vertical-align: top;
+      }
+      th {
+        background: #f1f1f1;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>L6 · Composition Plan</h1>
+    <p>
+      Complete one row for every positioned, layered, clipped, rounded, or
+      shape-wrapped element. Duplicate rows as needed.
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th>Element</th>
+          <th>Content purpose</th>
+          <th>Normal-flow baseline</th>
+          <th>Chosen technique and why</th>
+          <th>Containing block / stacking context</th>
+          <th>Fallback or disengagement</th>
+          <th>Required test</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Example only</td>
+          <td>Replace</td>
+          <td>Replace</td>
+          <td>Replace</td>
+          <td>Replace</td>
+          <td>Replace</td>
+          <td>Replace</td>
+        </tr>
+        <tr>
+          <td><code>.feature-header</code></td>
+          <td>Introduces page content</td>
+          <td>Standard block container in normal document flow</td>
+          <td>
+            <code>position: relative</code> to establish positioning for
+            introductory content which remains in normal flow and to provide a
+            relatively positioned parent for absolutely positioned
+            <code>.issue-badge</code> element
+          </td>
+          <td>
+            Contained in <code>body</code>; contains absolutely positioned
+            <code>.issue-badge</code>
+          </td>
+          <td>
+            <code>.issue-badge</code> becomes relative to a different ancestor
+            or viewport if removed
+          </td>
+          <td>
+            Verify <code>.issue-badge</code> remains anchored to the card at all
+            viewport sizes
+          </td>
+        </tr>
+        <tr>
+          <td><code>.issue-badge</code></td>
+          <td>Highlight badge; highlights an issue</td>
+          <td>Appears above content in document flow</td>
+          <td>
+            <code>position: absolute</code> to position element in the top-right
+            corner of page, outside of normal document flow
+          </td>
+          <td>Contained in <code>.feature-header</code></td>
+          <td>Element becomes relatively positioned to ancestor by default</td>
+          <td>
+            Verify <code>.issue-badge</code> remains anchored to the card at all
+            viewport sizes
+          </td>
+        </tr>
+        <tr>
+          <td><code>.article-heading</code></td>
+          <td>Headings for relevant info sections</td>
+          <td>Heading block at the top of relevant sections</td>
+          <td>
+            <code>sticky</code> heading that anchors to the top of the viewport
+            until replaced by subsequent headings/sections
+          </td>
+          <td>Contained in <code>article</code> block</td>
+          <td>
+            Heading does not stick to top of viewport and disappears at the top
+            or bottom of the viewport when scrolled
+          </td>
+          <td>
+            Verify <code>sticky</code> heading anchors to top of viewport when
+            scrolled
+          </td>
+        </tr>
+        <tr>
+          <td><code>.feature-figure</code></td>
+          <td><code>figure</code> container for featured content and media</td>
+          <td>Standard block container in normal document flow</td>
+          <td>
+            <code>position: relative</code> to provide a relatively positioned
+            parent for absolutely positioned element
+            <code>.figure-overlay</code>
+          </td>
+          <td>Replace</td>
+          <td>Replace</td>
+          <td>Replace</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
