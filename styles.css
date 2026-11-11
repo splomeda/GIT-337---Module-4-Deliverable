@@ -119,7 +119,7 @@ article {
 }
 article section {
   display: flow-root;
-  margin-block: 3rem;
+  margin-block: var(--space-md);
   scroll-margin-block-start: 6rem;
 }
 .story-guide {
