@@ -153,7 +153,7 @@ article section {
   margin: 0;
   padding: var(--space-md);
   border: 1px solid var(--color-border);
-  border-radius: var(--radius);
+  border-radius: var(--radius-sm);
   z-index: 1;
 }
 img {
@@ -223,6 +223,14 @@ img {
   align-items: center;
   border-left: 6px solid var(--color-action);
 }
+.screening-image {
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+.screening-figure {
+  margin: 0;
+  padding: 0;
+}
 .caption {
   font-size: var(--size-caption);
 }
@@ -285,7 +293,8 @@ img {
     z-index: var(--layer-sticky);
   }
   .pull-quote {
-    position: relative;
+    /*
+    position: relative;*/
     z-index: var(--layer-raised);
     margin-inline-start: -4rem;
     background: var(--color-surface);
@@ -293,7 +302,7 @@ img {
   @supports (shape-outside: circle(50%)) {
     .shape-portrait {
       float: inline-start;
-      shape-outside: circle(50%);
+      shape-outside: circle(45%);
       shape-margin: 1rem;
     }
   }
