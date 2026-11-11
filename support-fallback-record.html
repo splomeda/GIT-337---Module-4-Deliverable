@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>splomedahl | Support/Fallback Record</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.5;
+        max-width: 90rem;
+        margin: auto;
+        padding: 1rem;
+        color: #191919;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        padding: 0.6rem;
+        border: 1px solid #999;
+        text-align: left;
+        vertical-align: top;
+      }
+      th {
+        background: #03045e;
+        color: #fff;
+      }
+      .example-row {
+        background-color: #ccc;
+        color: #808080;
+      }
+      .odd-row {
+        background-color: #f2f2f2;
+      }
+      .fallback-image {
+        border: 1px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>L6 · Support/Fallback Record</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>MDN Reference</th>
+          <th>Checked Date</th>
+          <th>Fallback When Unavailable</th>
+          <th>Evidence</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>position: sticky</code></td>
+          <td>
+            MDN: Position<br /><a
+              href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Positioning#sticky_positioning"
+              target="_blank"
+              >Relevant Link</a
+            >
+          </td>
+          <td>11/11/2026</td>
+          <td>
+            Heading becomes normal-flow content and doesn't anchor to top of
+            viewport when scrolled, but still visible
+          </td>
+          <td>
+            <img
+              src="img/sticky-position.png"
+              alt="Sticky positioning disabled in css stylesheet"
+              width="400"
+            />
+          </td>
+        </tr>
+        <tr class="odd-row">
+          <td><code>position: absolute</code></td>
+          <td>
+            MDN: Position<br />
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Positioning#absolute_positioning"
+              target="_blank"
+              >Relevant Link</a
+            >
+          </td>
+          <td>11/11/2026</td>
+          <td>
+            Elements are returned to normal document flow and out of position
+          </td>
+          <td>
+            Before<br />
+            <img
+              src="img/featured-badge-position-before.png"
+              alt="Issue badge absolutely positioned"
+              width="400"
+            /><br /><br />
+            After<br />
+            <img
+              src="img/featured-badge-code.png"
+              alt="Issue badge css code"
+            /><br />
+            <img
+              src="img/featured-badge-position-after.png"
+              alt="Issue badge relatively positioned"
+              width="400"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><code>border-radius</code></td>
+          <td>
+            MDN: Rounded Corners<br />
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Backgrounds_and_borders#rounded_corners"
+              target="_blank"
+              >Relevant Link</a
+            >
+          </td>
+          <td>11/11/2026</td>
+          <td>
+            Object border will not be rounded and/or images will not be clipped
+            but images are still visible.
+          </td>
+          <td>
+            Before<br />
+            <img
+              src="img/border-round-img-clip-before.png"
+              alt="Image clipped with border-radius css styling"
+              width="400"
+              class="fallback-image"
+            /><br />
+            After<br />
+            <img
+              src="img/border-code.png"
+              alt="Image clipping disabled with border-radius css code disabled"
+              width="400"
+            /><br />
+            <img
+              src="img/border-round-img-clip-after.png"
+              alt="Image not clipped"
+              width="400"
+              class="fallback-image"
+            />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
