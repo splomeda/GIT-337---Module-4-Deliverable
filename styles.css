@@ -34,6 +34,7 @@
   --space-mlg: 1.25rem;
   --space-lg: 1.5rem;
   --space-xl: 2rem;
+  --space-xxl: 3rem;
 
   /* SIZING & MEASURE */
   --measure: 68ch;
@@ -63,7 +64,7 @@ body {
   color: var(--color-text);
   background: var(--color-bg);
   font-family: var(--font-body);
-  line-height: 1.6;
+  line-height: var(--line-height-body);
 }
 h1,
 h2,
@@ -82,15 +83,15 @@ a:hover {
   position: relative;
   padding: clamp(2rem, 7vw, 6rem);
   background: var(--color-action);
-  color: #fff;
+  color: var(--color-bg);
 }
 .eyebrow {
   color: var(--color-accent);
-  font-weight: 700;
+  font-weight: var(--font-weight);
 }
 .lede {
   max-width: var(--measure);
-  font-size: 1.25rem;
+  font-size: var(--size-h3);
 }
 .lede a {
   color: var(--color-accent);
@@ -100,15 +101,15 @@ a:hover {
 }
 .issue-badge {
   position: absolute;
-  inset-block-start: 1rem;
-  inset-inline-end: 1rem;
-  padding: 0.5rem;
+  inset-block-start: var(--space-md);
+  inset-inline-end: var(--space-md);
+  padding: var(--space-sm);
   background: var(--color-accent);
-  color: #191919;
+  color: var(--color-text);
 }
 main {
   display: grid;
-  gap: 2rem;
+  gap: var(--space-xl);
   max-width: 72rem;
   margin: auto;
   padding: var(--space-3);
@@ -123,13 +124,13 @@ article section {
 }
 .story-guide {
   align-self: start;
-  padding: 1rem;
+  padding: var(--space-md);
   border: 1px solid var(--color-border);
   background-color: var(--color-accent);
 }
 .story-guide a {
   display: block;
-  padding: 0.4rem;
+  padding: var(--space-sm);
   color: var(--color-action);
 }
 .story-guide a:hover {
@@ -141,16 +142,16 @@ article section {
   top: 0;
   z-index: 1;
   width: 100%;
-  height: 50px;
+  height: var(--space-xxl);
   background-color: var(--color-action);
   color: var(--color-bg);
   align-items: center;
-  padding-left: 10px;
+  padding-left: var(--space-md);
 }
 .feature-figure {
   position: relative;
   margin: 0;
-  padding: 1rem;
+  padding: var(--space-md);
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
   z-index: 1;
@@ -168,15 +169,15 @@ img {
   height: 120px;
   top: 50px;
   left: 50px;
-  padding: 20px;
+  padding: var(--space-md);
   justify-content: center;
   align-items: center;
   border-left: 6px solid var(--color-action);
   z-index: 2;
 }
 .pull-quote {
-  margin: 2rem 0;
-  padding: 1rem;
+  margin: var(--space-xxl) 0;
+  padding: var(--space-md);
   border-inline-start: 0.4rem solid var(--color-accent);
   font-size: 1.35rem;
 }
@@ -188,7 +189,7 @@ img {
   display: block;
   top: 0;
   right: 0;
-  padding: 20px;
+  padding: var(--space-mlg);
   width: 300px;
   height: auto;
   background-color: var(--color-accent);
@@ -203,12 +204,12 @@ img {
 .screening-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  gap: var(--space-xl);
   text-align: justify;
 }
 .grid-right {
   position: relative;
-  padding-top: 20px;
+  padding-top: var(--space-mlg);
 }
 .screening-img-overlay {
   display: flex;
@@ -218,12 +219,12 @@ img {
   height: 100px;
   top: 50px;
   right: 0;
-  padding: 20px;
+  padding: var(--space-md);
   align-items: center;
   border-left: 6px solid var(--color-action);
 }
 .caption {
-  font-size: 10px;
+  font-size: var(--size-caption);
 }
 .sect2-padding {
   text-align: justify;
@@ -232,11 +233,11 @@ img {
   width: min(45%, 20rem);
   margin: 0 1rem 1rem 0;
   border-radius: 50%;
-  margin-top: 30px;
+  margin-top: var(--space-mlg);
 }
 .documentation {
   grid-column: 1/-1;
-  padding: 1rem;
+  padding: var(--space-mlg);
   background: #f1f1f1;
 }
 .sources {
