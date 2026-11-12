@@ -65,9 +65,10 @@
           <td>11/11/2026</td>
           <td>
             Heading becomes normal-flow content and doesn't anchor to top of
-            viewport when scrolled, but still visible
+            viewport when scrolled, but still visible.
           </td>
           <td>
+            Rule Disabled
             <img
               src="img/sticky-position.png"
               alt="Sticky positioning disabled in css stylesheet"
@@ -87,16 +88,16 @@
           </td>
           <td>11/11/2026</td>
           <td>
-            Elements are returned to normal document flow and out of position
+            Elements are returned to normal document flow and out of position.
           </td>
           <td>
-            Before<br />
+            Rule Applied<br />
             <img
               src="img/featured-badge-position-before.png"
               alt="Issue badge absolutely positioned"
               width="400"
             /><br /><br />
-            After<br />
+            Rule Disabled<br />
             <img
               src="img/featured-badge-code.png"
               alt="Issue badge css code"
@@ -124,14 +125,14 @@
             but images are still visible.
           </td>
           <td>
-            Before<br />
+            Rule Applied<br />
             <img
               src="img/border-round-img-clip-before.png"
               alt="Image clipped with border-radius css styling"
               width="400"
               class="fallback-image"
             /><br />
-            After<br />
+            Rule Disabled<br />
             <img
               src="img/border-code.png"
               alt="Image clipping disabled with border-radius css code disabled"
@@ -166,16 +167,16 @@
           <td>11/11/2026</td>
           <td>
             Absolutely positioned object is out of position in the bottom left
-            of the parent container; not ideal, but still visible
+            of the parent container; not ideal, but still visible.
           </td>
           <td>
-            Before<br />
+            Rule Applied<br />
             <img
               src="img/inset-block-start-before.png"
               alt="Inset block start css styling"
               width="400"
             /><br />
-            After<br />
+            Rule Disabled<br />
             <img
               src="img/inset-block-start-code.png"
               alt="Inset block start css code disabled"
@@ -185,6 +186,245 @@
               src="img/inset-block-start-after.png"
               alt="Inest block start disabled"
               width="400"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <code>position: relative</code>
+          </td>
+          <td>
+            MDN: Position<br />
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Positioning#relative_positioning"
+              target="_blank"
+              >Relevant Link</a
+            >
+          </td>
+          <td>11/11/2026</td>
+          <td>
+            Instead of appearing on top/over adjacent block, block appears
+            underneath adjacent block. Block has the <code>z-index</code> rule
+            applied and <code>z-index</code> does not work on elements without
+            <code>position</code>.
+          </td>
+          <td>
+            Rule Applied<br />
+            <img
+              src="img/position-relative-before.png"
+              alt="Relative positioning applied to element"
+              width="400"
+              class="fallback-image"
+            /><br />
+            Rule Disabled<br />
+            <img
+              src="img/position-relative-code.png"
+              alt="Relative positioning CSS code snippet"
+              width="400"
+            /><br />
+            <img
+              src="img/position-relative-after.png"
+              alt="Relative positioning disabled from element"
+              width="400"
+              class="fallback-image"
+            />
+          </td>
+        </tr>
+        <tr class="odd-row">
+          <td>
+            <code>float: inline-start</code>
+          </td>
+          <td>
+            MDN: float CSS property<br />
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/float#inline-start"
+              target="_blank"
+              >Relevant Link</a
+            >
+          </td>
+          <td>11/11/2026</td>
+          <td>
+            If <code>float: inline-start</code> is disabled, or not present,
+            text fails to wrap around image and instead follows image in normal
+            document flow. Not ideal, but still visible.
+          </td>
+          <td>
+            Rule Applied<br />
+            <img
+              src="img/float-disabled-before.png"
+              alt="Float CSS property enabled as text wraps around edge of image"
+              width="400"
+              class="fallback-image"
+            /><br />
+            Rule Disabled<br />
+            <img
+              src="img/float-disabled-after-code.png"
+              alt="Float inline start CSS code snippet"
+              width="400"
+            /><br />
+            <img
+              src="img/float-disabled-after.png"
+              alt="Float CSS property disabled from element"
+              width="400"
+              class="fallback-image"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <code>shape-outside: circle(45%)</code>
+          </td>
+          <td>
+            MDN: Basic shapes with shape-outside<br />
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Shapes/Using_shape-outside"
+              target="_blank"
+              >Relevant Link</a
+            >
+          </td>
+          <td>11/11/2026</td>
+          <td>
+            When <code>shape-outside</code> is disabled, or absent, text does
+            wrap around image but doesn't follow the contour of the shape. Not
+            ideal, or as stylistically pleasing, but the text is still readable.
+          </td>
+          <td>
+            Rule Applied<br />
+            <img
+              src="img/shape-outside-disabled-before.png"
+              alt="Shape outside CSS property applied to image so texts wraps around image shape"
+              width="400"
+              class="fallback-image"
+            /><br />
+            Rule Disabled<br />
+            <img
+              src="img/shape-outside-disabled-code.png"
+              alt="Shape outside disabled CSS code snippet"
+              width="400"
+            /><br />
+            <img
+              src="img/shape-outside-disabled-after.png"
+              alt="Shape outside CSS property disabled"
+              width="400"
+              class="fallback-image"
+            />
+          </td>
+        </tr>
+        <tr class="odd-row">
+          <td>
+            <code>shape-margin: 1rem</code>
+          </td>
+          <td>
+            MDN: shape-margin CSS property<br />
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/shape-margin"
+              target="_blank"
+              >Relevant Link</a
+            >
+          </td>
+          <td>11/11/2026</td>
+          <td>
+            Provides needed spacing between element and wrapped text; ideal, but
+            not necessary.
+          </td>
+          <td>
+            Rule Applied<br />
+            <img
+              src="img/shape-margin-disabled-before.png"
+              alt="Shape margin CSS property enabled"
+              width="340"
+              class="fallback-image"
+            /><br />
+            Rule Disabled<br />
+            <img
+              src="img/shape-margin-disabled-code.png"
+              alt="Shape margin CSS code snippet"
+              width="340"
+            /><br />
+            <img
+              src="img/shape-margin-disabled-after.png"
+              alt="Shape margin CSS property disabled from element"
+              width="250"
+              class="fallback-image"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <code>clip-path: polygon</code>
+          </td>
+          <td>
+            MDN: clip-path CSS property<br />
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/clip-path"
+              target="_blank"
+              >Relevant Link</a
+            >
+          </td>
+          <td>11/11/2026</td>
+          <td>
+            Clips image using a custom shape path; interesting, but not
+            necessary.
+          </td>
+          <td>
+            Rule Applied<br />
+            <img
+              src="img/clip-path-disabled-before.png"
+              alt="Clip path CSS property enabled"
+              width="400"
+              class="fallback-image"
+            /><br />
+            Rule Disabled<br />
+            <img
+              src="img/clip-path-disabled-code.png"
+              alt="Clip path CSS code snippet"
+              width="400"
+            /><br />
+            <img
+              src="img/clip-path-disabled-after.png"
+              alt="Clip path CSS property disabled from element"
+              width="400"
+              class="fallback-image"
+            />
+          </td>
+        </tr>
+        <tr class="odd-row">
+          <td>
+            <code>margin-inline-start</code>
+          </td>
+          <td>
+            MDN: margin-inline-start CSS property<br />
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/margin-inline-start"
+              target="_blank"
+              >Relevant Link</a
+            >
+          </td>
+          <td>11/11/2026</td>
+          <td>
+            Allows element to start outside parent block. If disabled or absent
+            element returns to regular document flow and inner content is still
+            visible.
+          </td>
+          <td>
+            Rule Applied<br />
+            <img
+              src="img/margin-inline-start-disable-before.png"
+              alt="Margin inline start CSS property enabled"
+              width="400"
+              class="fallback-image"
+            /><br />
+            Rule Disabled<br />
+            <img
+              src="img/margin-inline-start-disable-code.png"
+              alt="Margin inline start CSS code snippet"
+              width="400"
+            /><br />
+            <img
+              src="img/margin-inline-start-disable-after.png"
+              alt="Margin inline start CSS property disabled from element"
+              width="400"
+              class="fallback-image"
             />
           </td>
         </tr>

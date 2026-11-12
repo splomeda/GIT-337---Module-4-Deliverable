@@ -293,8 +293,7 @@ img {
     z-index: var(--layer-sticky);
   }
   .pull-quote {
-    /*
-    position: relative;*/
+    position: relative;
     z-index: var(--layer-raised);
     margin-inline-start: -4rem;
     background: var(--color-surface);
