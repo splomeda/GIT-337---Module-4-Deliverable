@@ -234,13 +234,6 @@
                 height="768"
               />
             </td>
-            <td>
-              <img
-                src="img/320px09.png"
-                alt="320px viewport screenshot part 9"
-                height="768"
-              />
-            </td>
           </tr>
         </table>
       </div>
@@ -393,50 +386,140 @@
           <tr>
             <td><code>.feature-header</code></td>
             <td><code>position: relative</code></td>
-            <td></td>
-            <td></td>
+            <td>
+              The relatively positioned <code>.feature-header</code> block is
+              the parent of the absolutely positioned
+              <code>.issue-badge</code> child element.
+            </td>
+            <td>
+              <img
+                src="img/feature-header-parent.png"
+                alt="feature header parent block"
+                width="422"
+              />
+            </td>
           </tr>
           <tr>
             <td><code>.issue-badge</code></td>
             <td><code>position: absolute</code></td>
-            <td></td>
-            <td></td>
+            <td>
+              The absolutely positioned <code>.issue-badge</code> element is the
+              child of the relatively positioned
+              <code>.feature-header</code> block.
+            </td>
+            <td>
+              <img
+                src="img/issue-badge-child.png"
+                alt="issue badge child block"
+                width="422"
+              />
+            </td>
           </tr>
           <tr>
             <td><code>.article-heading</code></td>
             <td><code>position: sticky</code></td>
-            <td></td>
-            <td></td>
+            <td>
+              <code>sticky</code> heading sits on top of previous headings when
+              the viewport is scrolled then anchors to the top of the viewport.
+              The parent block is <code>.section-one</code>.
+            </td>
+            <td>
+              <img
+                src="img/article-heading-sticky.png"
+                alt="article heading sticky heading"
+                width="396"
+              />
+              <img
+                src="img/article-heading-sticky02.png"
+                alt="article heading sticky heading sitting on top of other heading"
+                width="346"
+                class="image-border"
+              />
+            </td>
           </tr>
           <tr>
             <td><code>.article-heading</code></td>
             <td><code>z-index: 1</code></td>
-            <td></td>
-            <td></td>
+            <td>
+              A <code>z-index</code> of <code>1</code> prevents text from
+              displaying over the headings when the viewport is scrolled.
+            </td>
+            <td>
+              <img
+                src="img/sticky-heading-z-index.png"
+                alt="sticky heading with a z-index"
+                width="319"
+              />
+            </td>
           </tr>
           <tr>
             <td><code>.feature-figure</code></td>
             <td><code>position: relative</code></td>
-            <td></td>
-            <td></td>
+            <td>
+              <code>.feature-figure</code> is the relatively positioned parent
+              of the <code>.figure-overlay</code> element.
+            </td>
+            <td>
+              <img
+                src="img/feature-figure-parent.png"
+                alt="feature figure parent block"
+                width="388"
+              />
+            </td>
           </tr>
           <tr>
             <td><code>.feature-figure</code></td>
             <td><code>z-index: 1</code></td>
-            <td></td>
-            <td></td>
+            <td>
+              <code>.feature-figure</code> has a <code>z-index</code> of
+              <code>1</code> so that it's child <code>.figure-overlay</code> can
+              be displayed on top of it/on the layer above it.
+            </td>
+            <td>
+              <img
+                src="img/feature-figure-z-index.png"
+                alt="feature figure with a z index of one"
+                width="449"
+              />
+            </td>
           </tr>
           <tr>
             <td><code>.figure-overlay</code></td>
             <td><code>position: absolute</code></td>
-            <td></td>
-            <td></td>
+            <td>
+              <code>.figure-overlay</code> is the absolutely positioned child of
+              the <code>.feature-figure</code> parent block. Element is
+              absolutely positioned to be visible on top of parent block.
+            </td>
+            <td>
+              <img
+                src="img/figure-overlay-child.png"
+                alt="figure overlay child element"
+                width="388"
+              />
+              <img
+                src="img/figure-overlay-child02.png"
+                alt="figure overlay child element positioned on top of parent block"
+                width="398"
+                class="image-border"
+              />
+            </td>
           </tr>
           <tr>
             <td><code>.figure-overlay</code></td>
             <td><code>z-index: 2</code></td>
-            <td></td>
-            <td></td>
+            <td>
+              <code>.figure-overlay</code> has a <code>z-index</code> of
+              <code>2</code> so it is displayed on top of its parent block
+              <code>.feature-figure</code>.
+            </td>
+            <td>
+              <img
+                src="img/figure-overlay-z-index.png"
+                alt="figure overlay child element with a z index of two"
+                width="488"
+              />
+            </td>
           </tr>
           <tr>
             <td><code>.figure-overlay</code></td>
@@ -445,8 +528,19 @@
                 >{position: relative;}</code
               >
             </td>
-            <td></td>
-            <td></td>
+            <td>
+              The position for <code>.figure-overlay</code> is changed from
+              <code>absolute</code> to <code>relative</code> for mobile where it
+              is displayed above its parent block in the document flow.
+            </td>
+            <td>
+              <img
+                src="img/figure-overlay-relative.png"
+                alt="figure overlay positioned relatively"
+                width="315"
+                class="image-border"
+              />
+            </td>
           </tr>
           <tr>
             <td><code>.ethnicity-numbers</code></td>

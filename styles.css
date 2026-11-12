@@ -154,6 +154,7 @@ article section {
   color: var(--color-bg);
   align-items: center;
   padding-left: var(--space-md);
+  border: 1px solid lime;
 }
 .feature-figure {
   position: relative;
