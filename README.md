@@ -2,6 +2,8 @@
 
 GIT 337 - Module 4 Deliverable assignment
 
+Authored by Steven Plomedahl
+
 Sources:
 
 1. National Diabetes Statistics Report
@@ -25,3 +27,10 @@ Sources:
 6. Doctor using a glucose meter to check a patient's blood sugar during a medical consultation.
    Image by Pavel Danilyuk
    https://www.pexels.com/photo/glucose-meter-in-doctor-hands-7653129/
+
+AI Disclosure:
+
+1. Asked MS Copilot what a "support/fallback record" is.
+2. Asked MS Copilot what is meant by "stacking-context inspection".
+3. No code was generated or written by AI.
+4. All work submitted is the work of Steven Plomedahl.
