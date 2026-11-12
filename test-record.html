@@ -13,48 +13,160 @@
         padding: 1rem;
         color: #191919;
       }
-      table {
-        width: 100%;
-        border-collapse: collapse;
-      }
-      th,
-      td {
-        padding: 0.6rem;
-        border: 1px solid #999;
-        text-align: left;
-        vertical-align: top;
-      }
-      th {
-        background: #03045e;
-        color: #fff;
-      }
-      .example-row {
-        background-color: #ccc;
-        color: #808080;
-      }
-      .odd-row {
-        background-color: #f2f2f2;
-      }
       .fallback-image {
         border: 1px solid #ccc;
       }
       .image-border {
+        border: 1px solid #ccc;
+        max-width: 100%;
+      }
+      .test-record-wrap {
+        display: flex;
+        flex-direction: column;
+      }
+      .table320 {
+        overflow-x: auto;
+      }
+      table {
+        min-width: 1000px;
+        border-collapse: collapse;
+      }
+      th,
+      td {
         border: 1px solid #ccc;
       }
     </style>
   </head>
   <body>
     <h1>L6 · Test Record · splomedahl</h1>
-    <section>
+    <section class="test-record-wrap">
       <hr />
       <h2>HTML & CSS Validation</h2>
       <h3>HTML</h3>
       <img
         src="img/html-validation.png"
         alt="Screenshot of HTML validation with no errors"
+        width="462"
         class="image-border"
       /><br />
       <h3>CSS</h3>
+      <img
+        src="img/CSS-validation.png"
+        alt="Screenshot of CSS validation with three erroneous errors"
+        width="570"
+        class="image-border"
+      />
+      <p>Validator incorrect; this is valid code.</p>
+      <hr />
+      <h2>CSS-Disabled Reading Order</h2>
+      <img
+        src="img/css-disabled-reading-order01.png"
+        alt="CSS disabled reading order part 1"
+        width="600"
+        class="image-border"
+      />
+      <img
+        src="img/css-disabled-reading-order02.png"
+        alt="CSS disabled reading order part 2"
+        width="600"
+        class="image-border"
+      />
+      <img
+        src="img/css-disabled-reading-order03.png"
+        alt="CSS disabled reading order part 3"
+        width="600"
+        class="image-border"
+      />
+      <img
+        src="img/css-disabled-reading-order04.png"
+        alt="CSS disabled reading order part 4"
+        width="600"
+        class="image-border"
+      />
+      <img
+        src="img/css-disabled-reading-order05.png"
+        alt="CSS disabled reading order part 5"
+        width="600"
+        class="image-border"
+      />
+      <img
+        src="img/css-disabled-reading-order06.png"
+        alt="CSS disabled reading order part 6"
+        width="600"
+        class="image-border"
+      />
+      <hr />
+      <h2>Viewports</h2>
+      <h3>320px</h3>
+      <div class="table320">
+        <table>
+          <tr>
+            <td>
+              <img
+                src="img/320px01.png"
+                alt="320px viewport screenshot part 1"
+                height="800"
+              />
+            </td>
+            <td>
+              <img
+                src="img/320px02.png"
+                alt="320px viewport screenshot part 2"
+                height="800"
+              />
+            </td>
+            <td>
+              <img
+                src="img/320px03.png"
+                alt="320px viewport screenshot part 3"
+                height="800"
+              />
+            </td>
+            <td>
+              <img
+                src="img/320px04.png"
+                alt="320px viewport screenshot part 4"
+                height="800"
+              />
+            </td>
+            <td>
+              <img
+                src="img/320px05.png"
+                alt="320px viewport screenshot part 5"
+                height="800"
+              />
+            </td>
+            <td>
+              <img
+                src="img/320px06.png"
+                alt="320px viewport screenshot part 6"
+                height="800"
+              />
+            </td>
+            <td>
+              <img
+                src="img/320px07.png"
+                alt="320px viewport screenshot part 7"
+                height="800"
+              />
+            </td>
+            <td>
+              <img
+                src="img/320px08.png"
+                alt="320px viewport screenshot part 8"
+                height="800"
+              />
+            </td>
+            <td>
+              <img
+                src="img/320px09.png"
+                alt="320px viewport screenshot part 9"
+                height="800"
+              />
+            </td>
+          </tr>
+        </table>
+      </div>
     </section>
   </body>
 </html>
