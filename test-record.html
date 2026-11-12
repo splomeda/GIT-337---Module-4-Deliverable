@@ -173,6 +173,7 @@
           </tr>
         </table>
       </div>
+      <hr />
       <h3>768px</h3>
       <div class="table320">
         <table>
@@ -243,6 +244,7 @@
           </tr>
         </table>
       </div>
+      <hr />
       <h3>1280px</h3>
       <img
         src="img/1280px01.png"
@@ -280,6 +282,7 @@
         class="image-border"
         width="1280"
       />
+      <hr />
       <h3>200% Zoom</h3>
       <img
         src="img/200z01.png"
@@ -326,6 +329,185 @@
         alt="200 percent zoom screenshot of viewport part 9"
         class="image-border"
       />
+      <hr />
+      <h2>Long Title</h2>
+      <img
+        src="img/long-title01.png"
+        alt="Screenshot of long title"
+        class="image-border"
+        width="475"
+      />
+      <img
+        src="img/long-title02.png"
+        alt="Screenshot of long title part 2"
+        class="image-border"
+        width="800"
+      />
+      <hr />
+      <h2>Doubled-Paragraph Growth</h2>
+      <img
+        src="img/doubled-paragraph01.png"
+        alt="Doubled paragraph growth part 1"
+        class="image-border"
+        width="475"
+      />
+      <img
+        src="img/doubled-paragraph02.png"
+        alt="Doubled paragraph growth part 2"
+        class="image-border"
+        width="550"
+      />
+      <img
+        src="img/doubled-paragraph03.png"
+        alt="Doubled paragraph growth part 3"
+        class="image-border"
+        width="1000"
+      />
+      <hr />
+      <h2>Sticky Behavior</h2>
+      <p>Headings stick to top of viewport.</p>
+      <img
+        src="img/sticky-headings.png"
+        alt="sticky headings"
+        class="image-border"
+        width="930"
+      />
+      <hr />
+      <h2>Pointer activation of every layered link/control</h2>
+      <p>✓ Passed</p>
+      <hr />
+      <h2><code>clip-path</code> and <code>shape-outside</code> disabled</h2>
+      <p>
+        ✓ Yes. Covered in
+        <a href="support-fallback-record.html">Support/Fallback Record</a>.
+      </p>
+      <h2>Stacking-Context Inspection</h2>
+      <div class="table320">
+        <table>
+          <thead>
+            <th>Element</th>
+            <th>Property</th>
+            <th>Why?</th>
+            <th>Evidence</th>
+          </thead>
+          <tr>
+            <td><code>.feature-header</code></td>
+            <td><code>position: relative</code></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><code>.issue-badge</code></td>
+            <td><code>position: absolute</code></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><code>.article-heading</code></td>
+            <td><code>position: sticky</code></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><code>.article-heading</code></td>
+            <td><code>z-index: 1</code></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><code>.feature-figure</code></td>
+            <td><code>position: relative</code></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><code>.feature-figure</code></td>
+            <td><code>z-index: 1</code></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><code>.figure-overlay</code></td>
+            <td><code>position: absolute</code></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><code>.figure-overlay</code></td>
+            <td><code>z-index: 2</code></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><code>.figure-overlay</code></td>
+            <td>
+              <code>@media (max-width: 768px)</code><br /><code
+                >{position: relative;}</code
+              >
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><code>.ethnicity-numbers</code></td>
+            <td><code>position: relative</code></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><code>.fact-box</code></td>
+            <td><code>position: absolute</code></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><code>.fact-box</code></td>
+            <td>
+              <code>@media (max-width: 768px)</code><br /><code
+                >{position: relative;}</code
+              >
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><code>.grid-right</code></td>
+            <td><code>position: relative</code></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><code>.screening-img-overlay</code></td>
+            <td><code>position: absolute</code></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><code>.story-guide</code></td>
+            <td><code>position: sticky</code></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><code>.story-guide</code></td>
+            <td><code>z-index: var(--layer-sticky)</code></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><code>.pull-quote</code></td>
+            <td><code>position: relative</code></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><code>.pull-quote</code></td>
+            <td><code>z-index: var(--layer-raised)</code></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
     </section>
   </body>
 </html>

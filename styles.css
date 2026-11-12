@@ -1,4 +1,11 @@
 :root {
+  --space-3: 0.25rem;
+  --radius: 0.5rem;
+  --layer-base: 0;
+  --layer-raised: 10;
+  --layer-sticky: 20;
+  --layer-overlay: 30;
+
   /* FONT SYSTEM */
   --font-body: "Montserrat", sans-serif;
   --font-display: "Lora", serif;
@@ -112,7 +119,7 @@ main {
   gap: var(--space-xl);
   max-width: 72rem;
   margin: auto;
-  padding: var(--space-3);
+  /*padding: var(--space-3);*/
 }
 article {
   min-width: 0;
@@ -175,6 +182,10 @@ img {
   border-left: 6px solid var(--color-action);
   z-index: 2;
 }
+.diabetes-container {
+  padding-right: var(--space-xl);
+  padding-left: var(--space-sm);
+}
 .pull-quote {
   margin: var(--space-xxl) 0;
   padding: var(--space-md);
@@ -183,6 +194,7 @@ img {
 }
 .ethnicity-numbers {
   position: relative;
+  padding: var(--space-sm);
 }
 .fact-box {
   position: absolute;
@@ -257,6 +269,16 @@ img {
   word-break: break-word;
 }
 @media (max-width: 768px) {
+  h2 {
+    padding: 5px;
+  }
+  .diabetes-container {
+    padding-right: var(--space-sm);
+    padding-left: 0;
+  }
+  .cost-caption {
+    padding-left: var(--space-lg);
+  }
   .fact-box {
     position: relative;
     width: 100%;
