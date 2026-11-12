@@ -439,16 +439,16 @@
           </tr>
           <tr>
             <td><code>.article-heading</code></td>
-            <td><code>z-index: 1</code></td>
+            <td><code>z-index: var(--layer-raised)</code></td>
             <td>
-              A <code>z-index</code> of <code>1</code> prevents text from
+              A <code>z-index</code> of <code>10</code> prevents text from
               displaying over the headings when the viewport is scrolled.
             </td>
             <td>
               <img
                 src="img/sticky-heading-z-index.png"
                 alt="sticky heading with a z-index"
-                width="319"
+                width="365"
               />
             </td>
           </tr>
@@ -469,17 +469,18 @@
           </tr>
           <tr>
             <td><code>.feature-figure</code></td>
-            <td><code>z-index: 1</code></td>
+            <td><code>z-index: var(--layer-raised)</code></td>
             <td>
               <code>.feature-figure</code> has a <code>z-index</code> of
-              <code>1</code> so that it's child <code>.figure-overlay</code> can
-              be displayed on top of it/on the layer above it.
+              <code>10</code> so that it's child
+              <code>.figure-overlay</code> can be displayed on top of it/on the
+              layer above it.
             </td>
             <td>
               <img
                 src="img/feature-figure-z-index.png"
-                alt="feature figure with a z index of one"
-                width="449"
+                alt="feature figure with a z index of ten"
+                width="458"
               />
             </td>
           </tr>
@@ -507,17 +508,17 @@
           </tr>
           <tr>
             <td><code>.figure-overlay</code></td>
-            <td><code>z-index: 2</code></td>
+            <td><code>z-index: var(--layer-sticky)</code></td>
             <td>
               <code>.figure-overlay</code> has a <code>z-index</code> of
-              <code>2</code> so it is displayed on top of its parent block
+              <code>20</code> so it is displayed on top of its parent block
               <code>.feature-figure</code>.
             </td>
             <td>
               <img
                 src="img/figure-overlay-z-index.png"
-                alt="figure overlay child element with a z index of two"
-                width="488"
+                alt="figure overlay child element with a z index of twenty"
+                width="506"
               />
             </td>
           </tr>

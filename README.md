@@ -2,7 +2,7 @@
 
 GIT 337 - Module 4 Deliverable assignment
 
-Authored by Steven Plomedahl
+Authored by Steven Plomedahl and GIT 337/ASU
 
 Sources:
 
@@ -33,4 +33,4 @@ AI Disclosure:
 1. Asked MS Copilot what a "support/fallback record" is.
 2. Asked MS Copilot what is meant by "stacking-context inspection".
 3. No code was generated or written by AI.
-4. All work submitted is the work of Steven Plomedahl.
+4. All work submitted is the work of Steven Plomedahl and GIT 337/ASU.
