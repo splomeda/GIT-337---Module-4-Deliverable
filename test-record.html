@@ -380,7 +380,7 @@
           <thead>
             <th>Element</th>
             <th>Property</th>
-            <th>Why?</th>
+            <th>Justification</th>
             <th>Evidence</th>
           </thead>
           <tr>
@@ -545,14 +545,35 @@
           <tr>
             <td><code>.ethnicity-numbers</code></td>
             <td><code>position: relative</code></td>
-            <td></td>
-            <td></td>
+            <td>
+              <code>.ethnicity-numbers</code> is positioned relatively so that
+              its child element <code>.fact-box</code> is displayed on the layer
+              above it.
+            </td>
+            <td>
+              <img
+                src="img/ethnicity-numbers-relative.png"
+                alt="element positioned relatively"
+                width="334"
+              />
+            </td>
           </tr>
           <tr>
             <td><code>.fact-box</code></td>
             <td><code>position: absolute</code></td>
-            <td></td>
-            <td></td>
+            <td>
+              <code>.fact-box</code> is positioned absolutely so that it is
+              displayed on the layer above its parent block
+              <code>.ethinicity-numbers</code>.
+            </td>
+            <td>
+              <img
+                src="img/fact-box-absolute.png"
+                alt="fact box element positioned absolutely over its parent block"
+                width="500"
+                class="image-border"
+              />
+            </td>
           </tr>
           <tr>
             <td><code>.fact-box</code></td>
@@ -561,44 +582,122 @@
                 >{position: relative;}</code
               >
             </td>
-            <td></td>
-            <td></td>
+            <td>
+              <code>.fact-box</code> is positioned relatively in mobile view so
+              that it doesn't cover up relevant text.
+            </td>
+            <td>
+              <img
+                src="img/fact-box-relative.png"
+                alt="fact box positioned relative to its parent block"
+                width="320"
+                class="image-border"
+              />
+            </td>
           </tr>
           <tr>
             <td><code>.grid-right</code></td>
             <td><code>position: relative</code></td>
-            <td></td>
-            <td></td>
+            <td>
+              <code>.grid-right</code> is positioned relatively so that its
+              child element <code>screening-img-overlay</code> can be displayed
+              on the layer above it.
+            </td>
+            <td>
+              <img
+                src="img/grid-right-relative.png"
+                alt="parent block grid right positioned relatively"
+                width="388"
+              />
+            </td>
           </tr>
           <tr>
             <td><code>.screening-img-overlay</code></td>
             <td><code>position: absolute</code></td>
-            <td></td>
-            <td></td>
+            <td>
+              <code>.screening-image-overlay</code> is positioned absolutely on
+              the layer above its parent block <code>.grid-right</code>.
+            </td>
+            <td>
+              <img
+                src="img/screening-img-overlay-mobile.png"
+                alt="screening image overlay positioned absolutely in mobile view"
+                width="318"
+                class="image-border"
+              />
+              <img
+                src="img/screening-img-overlay-desktop.png"
+                alt="screening image overlay positioned absolutely in desktop view"
+                width="633"
+                class="image-border"
+              />
+            </td>
           </tr>
           <tr>
             <td><code>.story-guide</code></td>
             <td><code>position: sticky</code></td>
-            <td></td>
-            <td></td>
+            <td>
+              <code>.story-guide</code> has a <code>sticky</code> position so
+              that it anchors to the top of the viewport when scrolled.
+            </td>
+            <td>
+              <img
+                src="img/story-guide-sticky.png"
+                alt="story guide element stickied to top of page"
+                width="440"
+                class="image-border"
+              />
+            </td>
           </tr>
           <tr>
             <td><code>.story-guide</code></td>
             <td><code>z-index: var(--layer-sticky)</code></td>
-            <td></td>
-            <td></td>
+            <td>
+              The <code>.story-guide</code> element has a
+              <code>z-index</code> of <code>20</code> so that it sits on the
+              layer above other content.
+            </td>
+            <td>
+              <img
+                src="img/story-guide-z-index.png"
+                alt="sotry guide with z index of twenty"
+                width="460"
+                class="image-border"
+              />
+            </td>
           </tr>
           <tr>
             <td><code>.pull-quote</code></td>
             <td><code>position: relative</code></td>
-            <td></td>
-            <td></td>
+            <td>
+              <code>.pull-quote</code> is positioned relatively in desktop view
+              above <code>52rem</code> so it sits in normal document flow.
+            </td>
+            <td>
+              <img
+                src="img/pull-quote-relatively.png"
+                alt="pull quote element positioned relatively"
+                width="600"
+                class="image-border"
+              />
+            </td>
           </tr>
           <tr>
             <td><code>.pull-quote</code></td>
             <td><code>z-index: var(--layer-raised)</code></td>
-            <td></td>
-            <td></td>
+            <td>
+              <code>.pull-quote</code> has a <code>z-index</code> of
+              <code>10</code> so it appears on the layer below
+              <code>.story-guide</code>.
+            </td>
+            <td>
+              <img
+                src="img/pull-quote-z-index.png"
+                alt="pull quote element with a z index of ten"
+                width="421"
+                class="image-border"
+              />
+            </td>
           </tr>
         </table>
       </div>
